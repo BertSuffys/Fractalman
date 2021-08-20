@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC9727DF26C2A92100FAE343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9727DE26C2A92100FAE343 /* AppDelegate.swift */; };
+		AC9727E126C2A92100FAE343 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9727E026C2A92100FAE343 /* SceneDelegate.swift */; };
+		AC9727E326C2A92100FAE343 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9727E226C2A92100FAE343 /* ViewController.swift */; };
+		AC9727E626C2A92100FAE343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9727E426C2A92100FAE343 /* Main.storyboard */; };
+		AC9727E826C2A92700FAE343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9727E726C2A92700FAE343 /* Assets.xcassets */; };
+		AC9727EB26C2A92700FAE343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9727E926C2A92700FAE343 /* LaunchScreen.storyboard */; };
+		AC9727F526C53E7400FAE343 /* FractalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9727F426C53E7400FAE343 /* FractalManager.swift */; };
+		AC9727F726C53E8C00FAE343 /* FractalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9727F626C53E8C00FAE343 /* FractalType.swift */; };
+		AC9727FA26C53F5C00FAE343 /* Mandelbrot.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AC9727F926C53F5C00FAE343 /* Mandelbrot.fsh */; };
+		AC9727FC26C53F9C00FAE343 /* Julia.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AC9727FB26C53F9C00FAE343 /* Julia.fsh */; };
+		AC9727FE26C5402500FAE343 /* Fractal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9727FD26C5402500FAE343 /* Fractal.swift */; };
+		AC97280026C5405D00FAE343 /* VCFractal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9727FF26C5405D00FAE343 /* VCFractal.swift */; };
+		AC97280226C5409100FAE343 /* VCFractalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97280126C5409100FAE343 /* VCFractalPicker.swift */; };
+		AC97280626C5418400FAE343 /* SKNodeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97280526C5418400FAE343 /* SKNodeExtensions.swift */; };
+		AC97280926C5442E00FAE343 /* FractalScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AC97280826C5442E00FAE343 /* FractalScene.sks */; };
+		AC97280B26C5486900FAE343 /* FractalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97280A26C5486900FAE343 /* FractalScene.swift */; };
+		AC97280D26C57FDD00FAE343 /* BurningShip.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AC97280C26C57FDD00FAE343 /* BurningShip.fsh */; };
+		AC97280F26C583F400FAE343 /* SierpinskyJulia.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AC97280E26C583F400FAE343 /* SierpinskyJulia.fsh */; };
+		AC97281126C58C2600FAE343 /* BertoSet.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AC97281026C58C2600FAE343 /* BertoSet.fsh */; };
+		AC97281326C68DB900FAE343 /* FractalMandelbrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97281226C68DB900FAE343 /* FractalMandelbrot.swift */; };
+		AC97281526C6959400FAE343 /* FractalJulia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97281426C6959400FAE343 /* FractalJulia.swift */; };
+		AC97281726C695C200FAE343 /* FractalBurningShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97281626C695C200FAE343 /* FractalBurningShip.swift */; };
+		AC97281926C6A5AB00FAE343 /* FractalSierpinski.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97281826C6A5AB00FAE343 /* FractalSierpinski.swift */; };
+		AC97281B26C6DD1200FAE343 /* ScreenshotExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97281A26C6DD1200FAE343 /* ScreenshotExtension.swift */; };
+		AC97281D26C80F3500FAE343 /* GraphicalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97281C26C80F3500FAE343 /* GraphicalExtensions.swift */; };
+		AC97282026CD486800FAE343 /* SidePanelMandelbrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97281F26CD486800FAE343 /* SidePanelMandelbrot.swift */; };
+		AC97282226CD489F00FAE343 /* SidePanelMandelbrot.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC97282126CD489F00FAE343 /* SidePanelMandelbrot.xib */; };
+		AC97283826CED2F500FAE343 /* SidePanelSirpinski.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC97283026CED2F500FAE343 /* SidePanelSirpinski.xib */; };
+		AC97283926CED2F500FAE343 /* SidePanelJulia.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC97283126CED2F500FAE343 /* SidePanelJulia.xib */; };
+		AC97283A26CED2F500FAE343 /* SidePanelJulia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97283226CED2F500FAE343 /* SidePanelJulia.swift */; };
+		AC97283B26CED2F500FAE343 /* SidePanelCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97283326CED2F500FAE343 /* SidePanelCustom.swift */; };
+		AC97283C26CED2F500FAE343 /* SidePanelCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC97283426CED2F500FAE343 /* SidePanelCustom.xib */; };
+		AC97283D26CED2F500FAE343 /* SidePanelSirpinski.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97283526CED2F500FAE343 /* SidePanelSirpinski.swift */; };
+		AC97283E26CED2F500FAE343 /* SidePanelBurningShip.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC97283626CED2F500FAE343 /* SidePanelBurningShip.xib */; };
+		AC97283F26CED2F500FAE343 /* SidePanelBurningShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97283726CED2F500FAE343 /* SidePanelBurningShip.swift */; };
+		AC97284226D0000500FAE343 /* ParentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97284126D0000500FAE343 /* ParentDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC9727DB26C2A92100FAE343 /* FractalMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FractalMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9727DE26C2A92100FAE343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC9727E026C2A92100FAE343 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AC9727E226C2A92100FAE343 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC9727E526C2A92100FAE343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC9727E726C2A92700FAE343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC9727EA26C2A92700FAE343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC9727EC26C2A92700FAE343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9727F426C53E7400FAE343 /* FractalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalManager.swift; sourceTree = "<group>"; };
+		AC9727F626C53E8C00FAE343 /* FractalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalType.swift; sourceTree = "<group>"; };
+		AC9727F926C53F5C00FAE343 /* Mandelbrot.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Mandelbrot.fsh; sourceTree = "<group>"; };
+		AC9727FB26C53F9C00FAE343 /* Julia.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Julia.fsh; sourceTree = "<group>"; };
+		AC9727FD26C5402500FAE343 /* Fractal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fractal.swift; sourceTree = "<group>"; };
+		AC9727FF26C5405D00FAE343 /* VCFractal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFractal.swift; sourceTree = "<group>"; };
+		AC97280126C5409100FAE343 /* VCFractalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFractalPicker.swift; sourceTree = "<group>"; };
+		AC97280526C5418400FAE343 /* SKNodeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKNodeExtensions.swift; sourceTree = "<group>"; };
+		AC97280826C5442E00FAE343 /* FractalScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FractalScene.sks; sourceTree = "<group>"; };
+		AC97280A26C5486900FAE343 /* FractalScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalScene.swift; sourceTree = "<group>"; };
+		AC97280C26C57FDD00FAE343 /* BurningShip.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BurningShip.fsh; sourceTree = "<group>"; };
+		AC97280E26C583F400FAE343 /* SierpinskyJulia.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SierpinskyJulia.fsh; sourceTree = "<group>"; };
+		AC97281026C58C2600FAE343 /* BertoSet.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BertoSet.fsh; sourceTree = "<group>"; };
+		AC97281226C68DB900FAE343 /* FractalMandelbrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalMandelbrot.swift; sourceTree = "<group>"; };
+		AC97281426C6959400FAE343 /* FractalJulia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalJulia.swift; sourceTree = "<group>"; };
+		AC97281626C695C200FAE343 /* FractalBurningShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalBurningShip.swift; sourceTree = "<group>"; };
+		AC97281826C6A5AB00FAE343 /* FractalSierpinski.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalSierpinski.swift; sourceTree = "<group>"; };
+		AC97281A26C6DD1200FAE343 /* ScreenshotExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotExtension.swift; sourceTree = "<group>"; };
+		AC97281C26C80F3500FAE343 /* GraphicalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicalExtensions.swift; sourceTree = "<group>"; };
+		AC97281F26CD486800FAE343 /* SidePanelMandelbrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidePanelMandelbrot.swift; sourceTree = "<group>"; };
+		AC97282126CD489F00FAE343 /* SidePanelMandelbrot.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SidePanelMandelbrot.xib; sourceTree = "<group>"; };
+		AC97283026CED2F500FAE343 /* SidePanelSirpinski.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SidePanelSirpinski.xib; sourceTree = "<group>"; };
+		AC97283126CED2F500FAE343 /* SidePanelJulia.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SidePanelJulia.xib; sourceTree = "<group>"; };
+		AC97283226CED2F500FAE343 /* SidePanelJulia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelJulia.swift; sourceTree = "<group>"; };
+		AC97283326CED2F500FAE343 /* SidePanelCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelCustom.swift; sourceTree = "<group>"; };
+		AC97283426CED2F500FAE343 /* SidePanelCustom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SidePanelCustom.xib; sourceTree = "<group>"; };
+		AC97283526CED2F500FAE343 /* SidePanelSirpinski.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelSirpinski.swift; sourceTree = "<group>"; };
+		AC97283626CED2F500FAE343 /* SidePanelBurningShip.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SidePanelBurningShip.xib; sourceTree = "<group>"; };
+		AC97283726CED2F500FAE343 /* SidePanelBurningShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelBurningShip.swift; sourceTree = "<group>"; };
+		AC97284126D0000500FAE343 /* ParentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC9727D826C2A92100FAE343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC9727D226C2A92000FAE343 = {
+			isa = PBXGroup;
+			children = (
+				AC9727DD26C2A92100FAE343 /* FractalMan */,
+				AC9727DC26C2A92100FAE343 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC9727DC26C2A92100FAE343 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC9727DB26C2A92100FAE343 /* FractalMan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC9727DD26C2A92100FAE343 /* FractalMan */ = {
+			isa = PBXGroup;
+			children = (
+				AC97284026CFFFED00FAE343 /* Delegate */,
+				AC97281E26CD481A00FAE343 /* Views */,
+				AC97280726C5440600FAE343 /* GraphicScenes */,
+				AC97280326C5410D00FAE343 /* Extension */,
+				AC9727F826C53F2200FAE343 /* Shaders */,
+				AC9727F326C53E3A00FAE343 /* Viewcontrollers */,
+				AC9727F226C53E3100FAE343 /* Domein */,
+				AC9727DE26C2A92100FAE343 /* AppDelegate.swift */,
+				AC9727E026C2A92100FAE343 /* SceneDelegate.swift */,
+				AC9727E226C2A92100FAE343 /* ViewController.swift */,
+				AC9727E426C2A92100FAE343 /* Main.storyboard */,
+				AC9727E726C2A92700FAE343 /* Assets.xcassets */,
+				AC9727E926C2A92700FAE343 /* LaunchScreen.storyboard */,
+				AC9727EC26C2A92700FAE343 /* Info.plist */,
+			);
+			path = FractalMan;
+			sourceTree = "<group>";
+		};
+		AC9727F226C53E3100FAE343 /* Domein */ = {
+			isa = PBXGroup;
+			children = (
+				AC9727F426C53E7400FAE343 /* FractalManager.swift */,
+				AC9727F626C53E8C00FAE343 /* FractalType.swift */,
+				AC9727FD26C5402500FAE343 /* Fractal.swift */,
+				AC97281226C68DB900FAE343 /* FractalMandelbrot.swift */,
+				AC97281426C6959400FAE343 /* FractalJulia.swift */,
+				AC97281626C695C200FAE343 /* FractalBurningShip.swift */,
+				AC97281826C6A5AB00FAE343 /* FractalSierpinski.swift */,
+			);
+			path = Domein;
+			sourceTree = "<group>";
+		};
+		AC9727F326C53E3A00FAE343 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				AC9727FF26C5405D00FAE343 /* VCFractal.swift */,
+				AC97280126C5409100FAE343 /* VCFractalPicker.swift */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		AC9727F826C53F2200FAE343 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				AC9727F926C53F5C00FAE343 /* Mandelbrot.fsh */,
+				AC9727FB26C53F9C00FAE343 /* Julia.fsh */,
+				AC97280C26C57FDD00FAE343 /* BurningShip.fsh */,
+				AC97280E26C583F400FAE343 /* SierpinskyJulia.fsh */,
+				AC97281026C58C2600FAE343 /* BertoSet.fsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		AC97280326C5410D00FAE343 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC97280526C5418400FAE343 /* SKNodeExtensions.swift */,
+				AC97281A26C6DD1200FAE343 /* ScreenshotExtension.swift */,
+				AC97281C26C80F3500FAE343 /* GraphicalExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AC97280726C5440600FAE343 /* GraphicScenes */ = {
+			isa = PBXGroup;
+			children = (
+				AC97280826C5442E00FAE343 /* FractalScene.sks */,
+				AC97280A26C5486900FAE343 /* FractalScene.swift */,
+			);
+			path = GraphicScenes;
+			sourceTree = "<group>";
+		};
+		AC97281E26CD481A00FAE343 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC97283726CED2F500FAE343 /* SidePanelBurningShip.swift */,
+				AC97283626CED2F500FAE343 /* SidePanelBurningShip.xib */,
+				AC97283326CED2F500FAE343 /* SidePanelCustom.swift */,
+				AC97283426CED2F500FAE343 /* SidePanelCustom.xib */,
+				AC97283226CED2F500FAE343 /* SidePanelJulia.swift */,
+				AC97283126CED2F500FAE343 /* SidePanelJulia.xib */,
+				AC97283526CED2F500FAE343 /* SidePanelSirpinski.swift */,
+				AC97283026CED2F500FAE343 /* SidePanelSirpinski.xib */,
+				AC97281F26CD486800FAE343 /* SidePanelMandelbrot.swift */,
+				AC97282126CD489F00FAE343 /* SidePanelMandelbrot.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC97284026CFFFED00FAE343 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				AC97284126D0000500FAE343 /* ParentDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC9727DA26C2A92100FAE343 /* FractalMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC9727EF26C2A92700FAE343 /* Build configuration list for PBXNativeTarget "FractalMan" */;
+			buildPhases = (
+				AC9727D726C2A92100FAE343 /* Sources */,
+				AC9727D826C2A92100FAE343 /* Frameworks */,
+				AC9727D926C2A92100FAE343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FractalMan;
+			productName = FractalMan;
+			productReference = AC9727DB26C2A92100FAE343 /* FractalMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC9727D326C2A92100FAE343 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					AC9727DA26C2A92100FAE343 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = AC9727D626C2A92100FAE343 /* Build configuration list for PBXProject "FractalMan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC9727D226C2A92000FAE343;
+			productRefGroup = AC9727DC26C2A92100FAE343 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC9727DA26C2A92100FAE343 /* FractalMan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC9727D926C2A92100FAE343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC97280F26C583F400FAE343 /* SierpinskyJulia.fsh in Resources */,
+				AC9727EB26C2A92700FAE343 /* LaunchScreen.storyboard in Resources */,
+				AC9727E826C2A92700FAE343 /* Assets.xcassets in Resources */,
+				AC97281126C58C2600FAE343 /* BertoSet.fsh in Resources */,
+				AC97280D26C57FDD00FAE343 /* BurningShip.fsh in Resources */,
+				AC97283926CED2F500FAE343 /* SidePanelJulia.xib in Resources */,
+				AC97283826CED2F500FAE343 /* SidePanelSirpinski.xib in Resources */,
+				AC97282226CD489F00FAE343 /* SidePanelMandelbrot.xib in Resources */,
+				AC9727E626C2A92100FAE343 /* Main.storyboard in Resources */,
+				AC9727FA26C53F5C00FAE343 /* Mandelbrot.fsh in Resources */,
+				AC97283C26CED2F500FAE343 /* SidePanelCustom.xib in Resources */,
+				AC97283E26CED2F500FAE343 /* SidePanelBurningShip.xib in Resources */,
+				AC97280926C5442E00FAE343 /* FractalScene.sks in Resources */,
+				AC9727FC26C53F9C00FAE343 /* Julia.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC9727D726C2A92100FAE343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC97280B26C5486900FAE343 /* FractalScene.swift in Sources */,
+				AC97281B26C6DD1200FAE343 /* ScreenshotExtension.swift in Sources */,
+				AC9727E326C2A92100FAE343 /* ViewController.swift in Sources */,
+				AC97281926C6A5AB00FAE343 /* FractalSierpinski.swift in Sources */,
+				AC97283D26CED2F500FAE343 /* SidePanelSirpinski.swift in Sources */,
+				AC97280026C5405D00FAE343 /* VCFractal.swift in Sources */,
+				AC9727DF26C2A92100FAE343 /* AppDelegate.swift in Sources */,
+				AC97281726C695C200FAE343 /* FractalBurningShip.swift in Sources */,
+				AC97284226D0000500FAE343 /* ParentDelegate.swift in Sources */,
+				AC9727E126C2A92100FAE343 /* SceneDelegate.swift in Sources */,
+				AC97280626C5418400FAE343 /* SKNodeExtensions.swift in Sources */,
+				AC97282026CD486800FAE343 /* SidePanelMandelbrot.swift in Sources */,
+				AC97280226C5409100FAE343 /* VCFractalPicker.swift in Sources */,
+				AC97283A26CED2F500FAE343 /* SidePanelJulia.swift in Sources */,
+				AC97283F26CED2F500FAE343 /* SidePanelBurningShip.swift in Sources */,
+				AC97281526C6959400FAE343 /* FractalJulia.swift in Sources */,
+				AC97281326C68DB900FAE343 /* FractalMandelbrot.swift in Sources */,
+				AC97283B26CED2F500FAE343 /* SidePanelCustom.swift in Sources */,
+				AC9727F526C53E7400FAE343 /* FractalManager.swift in Sources */,
+				AC9727F726C53E8C00FAE343 /* FractalType.swift in Sources */,
+				AC9727FE26C5402500FAE343 /* Fractal.swift in Sources */,
+				AC97281D26C80F3500FAE343 /* GraphicalExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC9727E426C2A92100FAE343 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC9727E526C2A92100FAE343 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC9727E926C2A92700FAE343 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC9727EA26C2A92700FAE343 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC9727ED26C2A92700FAE343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC9727EE26C2A92700FAE343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC9727F026C2A92700FAE343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RL22BR5XB2;
+				INFOPLIST_FILE = FractalMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bertoproductions.FractalMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC9727F126C2A92700FAE343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RL22BR5XB2;
+				INFOPLIST_FILE = FractalMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bertoproductions.FractalMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC9727D626C2A92100FAE343 /* Build configuration list for PBXProject "FractalMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9727ED26C2A92700FAE343 /* Debug */,
+				AC9727EE26C2A92700FAE343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC9727EF26C2A92700FAE343 /* Build configuration list for PBXNativeTarget "FractalMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9727F026C2A92700FAE343 /* Debug */,
+				AC9727F126C2A92700FAE343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC9727D326C2A92100FAE343 /* Project object */;
+}
